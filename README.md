@@ -1,6 +1,7 @@
 # Google_Translatation----Language_Switcher----multiLanguage----Free-
 
 # Index.html
+```jsx
  <!------------------------------- Google Translate --------------------------------->
   <!-------------------- Add this Codes within the body in index.html after this line: -<script type="module" src="/src/main.jsx"></script> ------------->
   <script type="text/javascript">
@@ -20,4 +21,4 @@
     }
   </script>
   <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-  
+  ```
