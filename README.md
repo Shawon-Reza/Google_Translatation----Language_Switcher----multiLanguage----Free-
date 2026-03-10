@@ -24,6 +24,9 @@
   ```
 # LanguageSwitcher.jsx
 ```jsx
+//======================= Place this componenet ant any plase for language change (Ususally on Navbar) ============================= 
+
+
 import { useEffect, useState } from "react";
 
 const LANGUAGES = [
