@@ -112,6 +112,14 @@ body {
 .skiptranslate {
     display: none;
 }
+/* Hide Google Translate floating shortcut/icon injected by the external script. */
+.goog-te-gadget-icon,
+.goog-logo-link,
+.VIpgJd-ZVi9od-aZ2wEe-wOHMyf,
+.VIpgJd-ZVi9od-aZ2wEe-OiiCO,
+.goog-te-spinner-pos {
+    display: none !important;
+}
 
 ```
 
