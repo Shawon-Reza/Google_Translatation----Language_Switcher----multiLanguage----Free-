@@ -97,3 +97,25 @@ function LanguageSwitcher() {
 export default LanguageSwitcher;
 
 ```
+# Index.css
+```jsx
+
+/* ------------- For Remove the watermark / google translation pop avobe the website------------------- */
+
+body {
+    top: 0px !important;
+}
+
+.skiptranslate {
+    display: none;
+}
+
+```
+
+
+
+
+
+
+
+
