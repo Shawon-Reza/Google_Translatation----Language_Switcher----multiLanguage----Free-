@@ -1,5 +1,3 @@
-# Google_Translatation----Language_Switcher----multiLanguage----Free-
-
 # Google Translate Website Integration (Free + Custom Language Switcher)
 
 A lightweight, free way to add **Google Website Translator** to a React/Vite/HTML project with:
