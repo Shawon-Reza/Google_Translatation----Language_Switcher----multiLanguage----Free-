@@ -67,23 +67,7 @@ Place this code **inside `<body>`**, preferably right after your main React scri
 
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+```
 
 
 
@@ -109,7 +93,8 @@ Place this code **inside `<body>`**, preferably right after your main React scri
   </script>
   <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   ```
-# LanguageSwitcher.jsx
+# 2. Add the Language Switcher component
+Create (or place) LanguageSwitcher.jsx anywhere — most commonly in your Navbar:
 ```jsx
 //======================= Place this componenet ant any plase for language change (Ususally on Navbar) ============================= 
 
