@@ -1,5 +1,92 @@
 # Google_Translatation----Language_Switcher----multiLanguage----Free-
 
+# Google Translate Website Integration (Free + Custom Language Switcher)
+
+A lightweight, free way to add **Google Website Translator** to a React/Vite/HTML project with:
+
+- A clean custom dropdown language switcher (usually placed in Navbar)
+- No visible Google branding/banner/watermark
+- Cookie-based language persistence
+- Support for 13 popular languages
+
+> **Important Notice (2025–2026)**  
+> Google officially restricts the free Website Translator widget mostly to **non-commercial / government / non-profit** use (especially COVID/academic related projects).  
+> For commercial websites it is recommended to use **Google Cloud Translation API** instead.  
+> Hiding the Google bar/branding via CSS may technically violate the terms of service — use at your own risk.
+
+## Features
+
+- Simple dropdown language selector
+- Remembers user's language choice via cookie (`googtrans`)
+- Hides Google Translate top banner & "Powered by Google" links
+- Works with modern React / Vite / plain HTML projects
+- No external npm packages required
+
+## Supported Languages
+
+| Code     | Language                  |
+|----------|---------------------------|
+| en       | English                   |
+| fr       | French                    |
+| es       | Spanish                   |
+| pt       | Portuguese                |
+| de       | German                    |
+| bn       | Bengali                   |
+| zh-CN    | Chinese (Simplified)      |
+| zh-TW    | Chinese (Traditional)     |
+| ja       | Japanese                  |
+| ko       | Korean                    |
+| ru       | Russian                   |
+| it       | Italian                   |
+| ar       | Arabic                    |
+
+## Installation
+
+### 1. Add Google Translate script to `index.html`
+
+Place this code **inside `<body>`**, preferably right after your main React script:
+
+```html
+<!-- Google Translate Widget -->
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    const mountNode = document.getElementById("google_translate_element");
+    if (!mountNode || !window.google?.translate?.TranslateElement) {
+      return;
+    }
+    new google.translate.TranslateElement(
+      {
+        pageLanguage: "en",                           // ← change if your default is different
+        includedLanguages: "en,fr,es,pt,de,bn,zh-CN,zh-TW,ja,ko,ru,it,ar",
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      },
+      "google_translate_element"
+    );
+  }
+</script>
+
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Index.html
 ```jsx
  <!------------------------------- Google Translate --------------------------------->
